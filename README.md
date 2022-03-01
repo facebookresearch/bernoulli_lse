@@ -24,9 +24,10 @@ The acquisition function implementations are Botorch acquisition classes, and ar
 - Run `python thresh_sensitivity_study.py` to run the experiment on sensitivity to LSE target, as in Fig. S6.
 - Run `sh gentime_bench.sh` to run the timing run, used for Fig. S2. Note that this runs the `gentime_bench.py` script 4 times with different args, since torch crashed if we tried to change the number of threads multiple times in a single script. 
 
+Results for each set of benchmarks will be placed in the `data/` subdirectory.
+
 ## To make the figures.
 
-- Place the csv results files created by running the scripts above into `data/`, in subdirectories `finalrun` for the main benchmark results, `init_sensitivity` for initialization sensitivity results, `thres_sensitivity` for threshold sensitivity, and `gentime_bench` for the timing run.
 - Run `figures/plot_posteriors.py` to generate Fig. 1.
 - Run `figures/plot_acquisition.py` to generate Fig. 2.
 - Run `figures/plot_experiment_results.py` to generate Figs. 3 and 5.
