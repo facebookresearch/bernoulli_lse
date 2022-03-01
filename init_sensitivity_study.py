@@ -37,7 +37,7 @@ inits = [100, 250, 500]
 
 if __name__ == "__main__":
 
-    out_fname_base = Path("../data/cameraready/init_sensitivity")
+    out_fname_base = Path("../data/init_sensitivity")
     out_fname_base.mkdir(
         parents=True, exist_ok=True
     )  # make an output folder if not exist

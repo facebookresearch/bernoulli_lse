@@ -9,8 +9,8 @@ sys.path.append("..")
 from plot_config import *
 
 
-# need finalrun for original thresh
-rundata = list(Path("../data/finalrun/").glob("*out.csv"))
+# need cameraready for original thresh
+rundata = list(Path("../data/cameraready/").glob("*out.csv"))
 sensitivity_rundata = list(Path("../data/thresh_sensitivity").glob("*out.csv"))
 
 
@@ -99,8 +99,6 @@ def make_thresh_sensitivity_figure():
         ax.plot(threshes, ymean, color=color, ls=ls, label=method, lw=1)
     ax.set_xticks(threshes)
 
-    # ax.set_ylim([0.15, 0.47])
-    # ax.set_yticks([0.2, 0.3, 0.4, 0.5])
     ax.grid(alpha=0.1)
     ax.set_title("Binarized Hartmann6 (6-d)")
     ax.set_xlabel("Target threshold")
@@ -133,7 +131,6 @@ def make_thresh_sensitivity_figure():
     ax.grid(alpha=0.1)
     ax.set_title("Psych. Discrimination (8-d)")
     ax.set_xlabel("Target threshold")
-    # ax.set_ylim([0.11, 0.24])
 
     prob = "contrast_sensitivity_6d"
     ax = fig.add_subplot(133)
@@ -157,13 +154,9 @@ def make_thresh_sensitivity_figure():
         )
         ax.plot(threshes, ymean, color=color, ls=ls, label=method, lw=1)
     ax.set_xticks(threshes)
-
-    # ax.set_ylim([0.08, 0.123])
-    # ax.set_yticks([0.2, 0.3, 0.4, 0.5])
     ax.grid(alpha=0.1)
     ax.set_xlabel("Target threshold")
     ax.set_title("Contrast Sensitivity (6-d)")
-    # ax.set_xlabel('Iteration')
 
     fig.subplots_adjust(bottom=0.34, left=0.09, top=0.91, right=0.99, wspace=0.3)
 

@@ -8,8 +8,8 @@ from pathlib import Path
 
 from plot_config import *
 
-# need finalrun for init=10
-rundata = list(Path("../data/finalrun/").glob("*out.csv")) + list(Path("../data/init_sensitivity").glob("*out.csv"))
+# need cameraready for init=10
+rundata = list(Path("../data/cameraready/").glob("*out.csv")) + list(Path("../data/init_sensitivity").glob("*out.csv"))
 
 
 def compile_results():

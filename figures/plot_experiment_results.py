@@ -10,7 +10,7 @@ sys.path.append('..')
 from plot_config import *
 import re
 
-run_data = list(Path("../data/finalrun/").glob("*out.csv"))
+run_data = list(Path("../data/cameraready/").glob("*out.csv"))
 
 
 def compile_results(run_data):

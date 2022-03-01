@@ -36,7 +36,7 @@ global_seed = 1000
 
 if __name__ == "__main__":
 
-    out_fname_base = Path("../data/cameraready/thresh_sensitivity")
+    out_fname_base = Path("../data/thresh_sensitivity")
     out_fname_base.mkdir(
         parents=True, exist_ok=True
     )  # make an output folder if not exist

@@ -110,7 +110,7 @@ class ContrastSensitivity6d(LSEProblemWithEdgeLogging):
         self.m = GPClassificationModel(
             lb=self.bounds[0],
             ub=self.bounds[1],
-            inducing_size=100,  # TODO INCREMENT ME TO 1000 FOR REAL RUNS
+            inducing_size=100,
             inducing_point_method="kmeans++",
         )
 
