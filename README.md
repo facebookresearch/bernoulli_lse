@@ -31,6 +31,7 @@ Results for each set of benchmarks will be placed in the `data/` subdirectory.
 - Run `figures/plot_posteriors.py` to generate Fig. 1.
 - Run `figures/plot_acquisition.py` to generate Fig. 2.
 - Run `figures/plot_experiment_results.py` to generate Figs. 3 and 5.
+- Run `figures/make_stim_plots.py` to generate Fig. 4. 
 - Run `figures/plot_supplement_experiment_results.py` to generate Figs. S1 and S3.
 - Run `figures/plot_gentimes.py` to generate Fig. S2.
 - Run `figures/plot_edge_sampling.py` to generate Fig. S4.
@@ -41,9 +42,10 @@ Results for each set of benchmarks will be placed in the `data/` subdirectory.
 
 `human_data_collection` contains the [Psychopy](http://psychopy.org/) code needing to collect data for the real-world experiment in the paper. The experiment measures contrast sensitivity as a function of 6 variables: 
 
-- spatial frequency
+- pedestal (mean background luminance)
+- contrast
 - temporal frequency
-- mean luminance
+- spatial frequency
 - eccentricity
-- field angle
+- size (visual field angle)
 - orientation
