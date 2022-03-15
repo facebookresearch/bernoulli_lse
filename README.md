@@ -1,6 +1,6 @@
 # Bernoulli Level Set Estimation 
 
-This repository contains the code associated with the paper [Look-Ahead Acquisition Functions for Bernoulli Level Set Estimation]().
+This repository contains the code associated with the paper [Look-Ahead Acquisition Functions for Bernoulli Level Set Estimation](https://research.facebook.com/file/328328082676090/Look-Ahead-Acquisition-Functions-for-Bernoulli-Level-Set-Estimation.pdf).
 
 If you find this code useful, please cite it as
 
